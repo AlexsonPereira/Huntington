@@ -1,3 +1,13 @@
+const peoples = [
+    {
+        name: "",
+        subtitle:"",
+        description:""
+        
+
+    }
+]
+
 function showSubMenu(){
     const submenu = document.getElementById("submenu-mobile")
     if(submenu.classList.contains("flex")){
@@ -21,4 +31,8 @@ function showSubMenu(){
         }, 100);
     }
     
+}
+
+function showCv(){
+
 }
