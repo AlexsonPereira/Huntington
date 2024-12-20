@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-primary {
+  @apply bg-[#2231cf] text-white hover:bg-[#00B0D9] uppercase text-xs font-semibold font-rubik;
+}
+
+.btn-secondary {
+  @apply bg-[#00B0D9] text-white hover:bg-[#00B0D9] uppercase text-xs font-semibold font-rubik;
+}
