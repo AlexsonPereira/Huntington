@@ -704,62 +704,13 @@ ul[buy-together-div-products] {
   top: 0;
   left: 0;
 }
+
 .banners_top .slider-indicators .active svg circle.animated {
   opacity: 1;
   stroke-dashoffset: 63px;
   transform: rotate(-90deg);
   transform-origin: 50%;
   animation: slider-timer 5s linear forwards infinite;
-}
-
-@keyframes slider-timer {
-  from {
-    stroke-dashoffset: 63px;
-  }
-  to {
-    stroke-dashoffset: 0px;
-  }
-}
-/* .banners_top .slider-indicators>*.active:before{
-    content: '';
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    border: 2px solid #FAFAFA ;
-    box-sizing: border-box;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-} */
-
-@media (max-width: 1024px) {
-  .slider-item-reveas-sm {
-    --swiffy-slider-item-reveal: 1.5rem;
-  }
-
-  ul[buy-together-div-products] {
-    --swiffy-slider-item-gap: 4px;
-  }
-  .banners_top .slider-indicators {
-    display: flex !important;
-  }
-  .banners_top .slider-nav {
-    left: 32px;
-  }
-  .banners_top .slider-nav.slider-nav-next {
-    right: 32px;
-    left: unset;
-  }
-  .banners_top .slider-indicators {
-    bottom: 20px !important;
-    gap: 6px;
-  }
-  .banners_top .slider-indicators > * {
-    width: 6px;
-    height: 6px;
-    bottom: 0px;
-  }
 }
 
 .slider-pagination-huntington .slider-indicators > *.active {
@@ -769,9 +720,9 @@ ul[buy-together-div-products] {
 
 .slider-pagination-huntington .slider-indicators > * {
   width: 12px;
-  height: 1px;
+  height: 2px;
 
   @media (min-width: 1024px) {
-    height: 2px;
+    height: 3px;
   }
 }

@@ -242,25 +242,6 @@ details summary .close {
 }
 
 
-.btn-programacao label::before{
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px; /* Tamanho da borda externa */
-  background: linear-gradient(90deg, #B04EE1 0%, #01AFD9 100%); /* Gradiente da borda */
-  z-index: -1; /* Fica atrás do conteúdo */
-  border-radius: inherit; /* Mesma borda arredondada do label */
-}
-
-.btn-programacao label{
-  position: relative;
-  z-index: 0;
-  background-color: #02024d; /* Fundo interno */
-  border-radius: 57px; /* Arredondamento da borda */
-}
-
 .btn-programacao input:checked ~ label{
   background-image: linear-gradient(90deg, #B04EE1 0%, #01AFD9 100%); 
 }
@@ -268,15 +249,5 @@ details summary .close {
 
 .sala-checked input:checked ~ label{
   background: linear-gradient(90deg, #B04EE1 0%, #01AFD9 100%) !important;
-}
-
-.elemento {
-  position: relative;
-  background: linear-gradient(to right, red, blue); /* Gradiente */
-  padding: 10px; /* Espaço interno */
-  border-radius: 10px; /* Para bordas arredondadas */
-
-  /* Ajusta a sobreposição do fundo */
-  z-index: 0;
 }
 
