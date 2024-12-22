@@ -6,84 +6,85 @@
     <link rel="stylesheet" href="assets/CSS/font.css">
     <link rel="stylesheet" href="./assets/CSS/index.css">
     <link rel="stylesheet" href="./assets/CSS/output.css">
+    <script src="./assets/JS/index.js"></script>
     <title>HUNTINGTON</title>
 </head>
 <body>
-<header class="bg-[#050375] text-white uppercase  font-light fixed top-0 left-0 right-0 w-screen z-50">
-    <div class="flex px-6 py-6 lg:px-0 lg:py-3 justify-between lg:gap-[88px] items-center max-w-[1090px] mx-auto ">
-        <div class="flex items-center gap-6">
-            <div class="flex flex-col gap-1 lg:hidden" onclick="showSubMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="3" viewBox="0 0 23 3" fill="none">
-                    <path d="M1.57031 1.5H21.5703" stroke="white" stroke-width="1.25" stroke-linecap="square"/>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="3" viewBox="0 0 23 3" fill="none">
-                    <path d="M1.57031 1.5H21.5703" stroke="white" stroke-width="1.25" stroke-linecap="square"/>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="3" viewBox="0 0 23 3" fill="none">
-                    <path d="M1.57031 1.5H21.5703" stroke="white" stroke-width="1.25" stroke-linecap="square"/>
-                </svg>
-            </div>
-            <div>
-                <a href="./index.html">
-                    <img class="w-[144px] lg:w-[168px]" src="./assets/Img/LogoHuntingtonBranco.png" alt="">
-                </a>
-            </div>
-        </div>
-        <nav class="absolute lg:flex lg:relative">
-            <ul id="submenu-mobile" class="z-50 fixed w-[300px] h-screen lg:h-auto pt-[50px] px-6 lg:px-0 lg:pt-0 font-rubik text-[#100D9D] lg:text-white lg:w-auto bg-white lg:bg-transparent left-0 top-0 hidden  flex-col gap-10 lg:relative lg:gap-[30px] text-xs  lg:flex">
-                <li class="flex items-center gap-2 lg:hidden font-light" onclick="showSubMenu()">s
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                        <g clip-path="url(#clip0_5946_33755)">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.42561 1.12122C4.59961 1.29516 4.59961 1.57722 4.42561 1.75116L1.62241 4.55436H9.45608C9.70208 4.55436 9.90155 4.75382 9.90155 4.99982C9.90155 5.24582 9.70208 5.44529 9.45608 5.44529H1.62241L4.42561 8.24842C4.59961 8.42242 4.59961 8.70449 4.42561 8.87849C4.25168 9.05236 3.96961 9.05236 3.79568 8.87849L0.232013 5.31482C0.0580792 5.14082 0.0580792 4.85882 0.232013 4.68482L3.79568 1.12122C3.96961 0.947223 4.25168 0.947223 4.42561 1.12122Z" fill="#100D9D"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_5946_33755">
-                        <rect width="10" height="10" fill="white"/>
-                        </clipPath>
-                        </defs>
+    <header class="bg-[#050375] text-white uppercase  font-light fixed top-0 left-0 right-0 w-screen z-50">
+        <div class="flex px-6 py-6 lg:px-0 lg:py-3 justify-between lg:gap-[88px] items-center max-w-[1090px] mx-auto ">
+            <div class="flex items-center gap-6">
+                <div class="flex flex-col gap-1 lg:hidden" onclick="showSubMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="3" viewBox="0 0 23 3" fill="none">
+                        <path d="M1.57031 1.5H21.5703" stroke="white" stroke-width="1.25" stroke-linecap="square"/>
                     </svg>
-                    <span>VOLTAR</span>
-                </li>
-                <ul class="flex flex-col gap-8 font-medium lg:flex-row ">
-                    <li class="lg:text-nowrap">
-                        <a href="/index.html">SOBRE</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="3" viewBox="0 0 23 3" fill="none">
+                        <path d="M1.57031 1.5H21.5703" stroke="white" stroke-width="1.25" stroke-linecap="square"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="3" viewBox="0 0 23 3" fill="none">
+                        <path d="M1.57031 1.5H21.5703" stroke="white" stroke-width="1.25" stroke-linecap="square"/>
+                    </svg>
+                </div>
+                <div>
+                    <a href="./index.html">
+                        <img class="w-[144px] lg:w-[168px]" src="./assets/Img/LogoHuntingtonBranco.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <nav class="absolute lg:flex lg:relative">
+                <ul id="submenu-mobile" class="z-50 fixed w-[300px] h-screen lg:h-auto pt-[50px] px-6 lg:px-0 lg:pt-0 font-rubik text-[#100D9D] lg:text-white lg:w-auto bg-white lg:bg-transparent left-0 top-0 hidden  flex-col gap-10 lg:relative lg:gap-[30px] text-xs  lg:flex">
+                    <li class="flex items-center gap-2 lg:hidden font-light" onclick="showSubMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                            <g clip-path="url(#clip0_5946_33755)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.42561 1.12122C4.59961 1.29516 4.59961 1.57722 4.42561 1.75116L1.62241 4.55436H9.45608C9.70208 4.55436 9.90155 4.75382 9.90155 4.99982C9.90155 5.24582 9.70208 5.44529 9.45608 5.44529H1.62241L4.42561 8.24842C4.59961 8.42242 4.59961 8.70449 4.42561 8.87849C4.25168 9.05236 3.96961 9.05236 3.79568 8.87849L0.232013 5.31482C0.0580792 5.14082 0.0580792 4.85882 0.232013 4.68482L3.79568 1.12122C3.96961 0.947223 4.25168 0.947223 4.42561 1.12122Z" fill="#100D9D"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_5946_33755">
+                            <rect width="10" height="10" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <span>VOLTAR</span>
                     </li>
-                    <li class="lg:text-nowrap">
-                        <a href="/index.html">SPEAKERS</a></li>
-                    <li class="lg:text-nowrap">
-                        <a href="/index.html">PROGRAMAÇÃO</a>
-                    </li>
-                    <li class="lg:text-nowrap">
-                        <a href="/index.html">comissão</a>
-                    </li>
-                    <li class="lg:text-nowrap">
-                        <a href="/index.html">patrocinadores</a>
-                    </li>
-                    <li class="lg:text-nowrap">
-                        <a href="/index.html">FAQ</a>
+                    <ul class="flex flex-col gap-8 font-medium lg:font-normal lg:flex-row ">
+                        <li class="lg:text-nowrap hover:font-medium">
+                            <a class="hover:font-medium lg:min-w-[41px] lg:flex" href="./index.html#sobre">SOBRE</a>
+                        </li>
+                        <li class="lg:text-nowrap hover:font-medium">
+                            <a class="hover:font-medium lg:min-w-[63px] lg:flex" href="./index.html#speakers">SPEAKERS</a></li>
+                        <li class="lg:text-nowrap hover:font-medium">
+                            <a class="hover:font-medium lg:min-w-[92px] lg:flex" href="./index.html#programacao">PROGRAMAÇÃO</a>
+                        </li>
+                        <li class="lg:text-nowrap hover:font-medium">
+                            <a class="hover:font-medium lg:min-w-[62px] lg:flex" href="./index.html#comissao">comissão</a>
+                        </li>
+                        <li class="lg:text-nowrap hover:font-medium">
+                            <a class="hover:font-medium lg:min-w-[107px] lg:flex" href="./index.html#patrocinadores">patrocinadores</a>
+                        </li>
+                        <li class="lg:text-nowrap hover:font-medium">
+                            <a class="hover:font-medium lg:min-w-[25px]  lg:flex" href="./index.html#faq">FAQ</a>
+                        </li>
+                    </ul>
+                    <li class="lg:hidden">
+                        <button class="btn-secondary w-full h-9 bg-[#00B0D9]">
+                            <a target="_blank" href="https://www.sympla.com.br/evento/6-congresso-internacional-huntington-de-medicina-reprodutiva/2749066 ">
+                                INSCREVA-SE
+                            </a>    
+                        </button>
                     </li>
                 </ul>
-                <li class="lg:hidden">
-                    <button class="btn-secondary w-full h-9 bg-[#00B0D9]">
-                        <a target="_blank" href="https://www.sympla.com.br/evento/6-congresso-internacional-huntington-de-medicina-reprodutiva/2749066 ">
-                            INSCREVA-SE
-                        </a>    
-                    </button>
-                </li>
-            </ul>
-        </nav>
-        <div>
-            <button class="btn-primary w-[112px] h-9 lg:w-[140px] lg:h-[45px]">
-                <a target="_blank" href="https://www.sympla.com.br/evento/6-congresso-internacional-huntington-de-medicina-reprodutiva/2749066 ">
-                    INSCREVA-SE
-                </a>
-            </button>
+            </nav>
             <div>
+                <button class="btn-primary w-[112px] h-9 lg:w-[140px] lg:h-[45px]">
+                    <a target="_blank" href="https://www.sympla.com.br/evento/6-congresso-internacional-huntington-de-medicina-reprodutiva/2749066 ">
+                        INSCREVA-SE
+                    </a>
+                </button>
+                <div>
 
+                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
     <main class="mt-[84px] lg:mt-[69px] lg:px-[96px] bg-[#050375] h-full px-6 pb-20">
         <div class="max-w-[1089px] mx-auto pt-8 lg:pt-[60px]">
             <div class="flex flex-col gap-4 mb-8 lg:mb-10">
@@ -227,36 +228,34 @@
         </div>        
     </main>
     <footer class="bg-[#050375]">
-        <div class="flex pt-[50px] lg:items-center px-6 flex-col lg:flex-row lg:justify-between lg:px-24 lg:py-[60px]" style="background: rgba(0, 2, 37, 0.20);">
+        <div class="flex pt-[50px] pb-[50px] lg:items-center px-6 flex-col lg:flex-row lg:justify-between lg:px-24 lg:py-[60px]" style="background: rgba(0, 2, 37, 0.20);">
             <img class="w-[144px] lg:w-[168px] lg:h-[43px] h-auto" src="./assets/Img/LogoHuntingtonBranco.png" alt="Logo Huntington">
-            <div class="flex flex-col gap-8 lg:gap-40 mt-10 lg:mt-0 pb-12 lg:pb-0 font-rubik text-sm lg:text-base text-white lg:flex-row">
-                <div class="lg:flex flex-col justify-between gap-3">
-                    <div class="lg:flex lg:flex-col">CONTATO <span class="uppercase font-light text-[#F5F5F5]"><a target="_blank" href="mailto:congresso@huntington.com.br">congresso@huntington.com.br</a></span></div>
-                    <div class="flex gap-2">
-                        SIGA-NOS
-                        <a class="flex gap-2 items-center" target="_blank" href="https://www.instagram.com/clinicahuntington/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                <g clip-path="url(#clip0_5946_33129)">
-                                <path d="M11.332 2.24231H4.66536C2.82442 2.24231 1.33203 3.73469 1.33203 5.57564V12.2423C1.33203 14.0833 2.82442 15.5756 4.66536 15.5756H11.332C13.173 15.5756 14.6654 14.0833 14.6654 12.2423V5.57564C14.6654 3.73469 13.173 2.24231 11.332 2.24231Z" stroke="white" stroke-width="1.04348" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M10.6639 8.48926C10.7461 9.04409 10.6514 9.61074 10.393 10.1086C10.1347 10.6065 9.72596 11.0102 9.22495 11.2624C8.72394 11.5145 8.15617 11.6023 7.60239 11.5132C7.04862 11.4241 6.53704 11.1626 6.14043 10.766C5.74381 10.3694 5.48236 9.85784 5.39325 9.30407C5.30414 8.75029 5.39191 8.18252 5.64408 7.68151C5.89626 7.18049 6.29999 6.77175 6.79786 6.51342C7.29572 6.25509 7.86237 6.16032 8.4172 6.24259C8.98315 6.32652 9.5071 6.59023 9.91166 6.9948C10.3162 7.39936 10.5799 7.92331 10.6639 8.48926Z" stroke="white" stroke-width="1.04348" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M11.6641 5.24231H11.6715" stroke="white" stroke-width="1.04348" stroke-linecap="round" stroke-linejoin="round"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_5946_33129">
-                                <rect width="16" height="16" fill="white" transform="translate(0 0.909058)"/>
-                                </clipPath>
-                                </defs>
-                            </svg> 
-                            <span class="uppercase">
-                                instagram
-                            </span>
-                        </a>
-                    </div>
+            <div class="lg:flex flex-col justify-between gap-3 font-rubik mt-10 lg:mt-0 text-white">
+                <div class="flex lg:flex-col gap-2 lg:gap-0.5 text-sm lg:text-base">CONTATO <span class="uppercase font-light text-[#F5F5F5]"><a class="text-xs" target="_blank" href="mailto:congresso@huntington.com.br">congresso@huntington.com.br</a></span></div>
+                <div class="flex items-center gap-2 mt-8 lg:mt-0 text-sm lg:text-base">
+                    SIGA-NOS
+                    <a class="flex gap-2 items-center" target="_blank" href="https://www.instagram.com/clinicahuntington/">
+                        <svg class="lg:w-[20px] lg:h-[20px]" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                            <g clip-path="url(#clip0_5946_33129)">
+                            <path d="M11.332 2.24231H4.66536C2.82442 2.24231 1.33203 3.73469 1.33203 5.57564V12.2423C1.33203 14.0833 2.82442 15.5756 4.66536 15.5756H11.332C13.173 15.5756 14.6654 14.0833 14.6654 12.2423V5.57564C14.6654 3.73469 13.173 2.24231 11.332 2.24231Z" stroke="white" stroke-width="1.04348" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.6639 8.48926C10.7461 9.04409 10.6514 9.61074 10.393 10.1086C10.1347 10.6065 9.72596 11.0102 9.22495 11.2624C8.72394 11.5145 8.15617 11.6023 7.60239 11.5132C7.04862 11.4241 6.53704 11.1626 6.14043 10.766C5.74381 10.3694 5.48236 9.85784 5.39325 9.30407C5.30414 8.75029 5.39191 8.18252 5.64408 7.68151C5.89626 7.18049 6.29999 6.77175 6.79786 6.51342C7.29572 6.25509 7.86237 6.16032 8.4172 6.24259C8.98315 6.32652 9.5071 6.59023 9.91166 6.9948C10.3162 7.39936 10.5799 7.92331 10.6639 8.48926Z" stroke="white" stroke-width="1.04348" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.6641 5.24231H11.6715" stroke="white" stroke-width="1.04348" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_5946_33129">
+                            <rect width="16" height="16" fill="white" transform="translate(0 0.909058)"/>
+                            </clipPath>
+                            </defs>
+                        </svg> 
+                        <span class="uppercase font-light text-xs">
+                            instagram
+                        </span>
+                    </a>
                 </div>
-                <div class="lg:flex flex-col justify-between gap-3">
-                    <div class="uppercase"><a href="./cancelamento.html">Regras de Cancelamento</a></div>
-                    <div class="uppercase"><a href="./politicas-privacidade.html">POLÍTICA DE PRIVACIDADE</a></div>
-                </div>
+            </div>
+            <div class="lg:flex flex-col justify-between gap-3 font-rubik mt-8 lg:mt-0 text-white">
+                <div class="uppercase text-sm lg:text-base"><a href="./cancelamento.html">Regras de Cancelamento</a></div>
+                <div class="uppercase text-sm lg:text-base mt-8 lg:mt-0"><a href="./politicas-privacidade.html">POLÍTICA DE PRIVACIDADE</a></div>
             </div>
         </div>
     </footer>

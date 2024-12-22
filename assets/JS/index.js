@@ -184,6 +184,7 @@ function showCv(element){
 
 function showCountDown(){
     const divDays = document.getElementById("days")
+    if(!divDays) return
     const divHours = document.getElementById("hours")
     const divMinutes = document.getElementById("min")
     const divsSeconds = document.getElementById("secon")
