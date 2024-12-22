@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/CSS/index.css">
     <link rel="stylesheet" href="assets/CSS/output.css">
     <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/30c67d99-c436-4075-8903-a4298085cdf6-loader.js" ></script>
-    <script src="./assets/JS/swiffy-slider.js"></script>
+    <script src="./assets/JS/swiffy-slider.js" defer></script>
     <script src="./assets/JS/swiffy-slider-extensions.js"></script>
     <script src="./assets/JS/index.js"></script>
     <link rel="stylesheet" href="./assets/CSS/swiffy-slider.css">
@@ -48,23 +48,23 @@
                         </svg>
                         <span>VOLTAR</span>
                     </li>
-                    <ul class="flex flex-col gap-8 font-medium lg:flex-row ">
-                        <li class="lg:text-nowrap">
-                            <a href="#sobre">SOBRE</a>
+                    <ul class="flex flex-col gap-8 font-medium lg:font-normal lg:flex-row ">
+                        <li class="lg:text-nowrap hover:font-medium">
+                            <a class="hover:font-medium lg:min-w-[41px] lg:flex" href="#sobre">SOBRE</a>
                         </li>
-                        <li class="lg:text-nowrap">
-                            <a href="#speakers">SPEAKERS</a></li>
-                        <li class="lg:text-nowrap">
-                            <a href="#programacao">PROGRAMAÇÃO</a>
+                        <li class="lg:text-nowrap hover:font-medium">
+                            <a class="hover:font-medium lg:min-w-[63px] lg:flex" href="#speakers">SPEAKERS</a></li>
+                        <li class="lg:text-nowrap hover:font-medium">
+                            <a class="hover:font-medium lg:min-w-[92px] lg:flex" href="#programacao">PROGRAMAÇÃO</a>
                         </li>
-                        <li class="lg:text-nowrap">
-                            <a href="#comissao">comissão</a>
+                        <li class="lg:text-nowrap hover:font-medium">
+                            <a class="hover:font-medium lg:min-w-[62px] lg:flex" href="#comissao">comissão</a>
                         </li>
-                        <li class="lg:text-nowrap">
-                            <a href="#patrocinadores">patrocinadores</a>
+                        <li class="lg:text-nowrap hover:font-medium">
+                            <a class="hover:font-medium lg:min-w-[107px] lg:flex" href="#patrocinadores">patrocinadores</a>
                         </li>
-                        <li class="lg:text-nowrap">
-                            <a href="#faq">FAQ</a>
+                        <li class="lg:text-nowrap hover:font-medium">
+                            <a class="hover:font-medium lg:min-w-[25px]  lg:flex" href="#faq">FAQ</a>
                         </li>
                     </ul>
                     <li class="lg:hidden">
@@ -127,7 +127,7 @@
                 <li ></li>
             </ul>
         </section> 
-        <section class="bg-[#050375]">
+        <section class="bg-[#050375] relative">
             <div class="pt-[42px] flex flex-col gap-6 items-center lg:flex-row lg:justify-center lg:flex-wrap lg:mx-auto lg:max-w-[720px]">
                 <svg class="lg:w-[35px] lg:h-auto" xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
                     <path d="M3.65387 4.23047C3.08262 4.23047 2.53478 4.4574 2.13085 4.86132C1.72693 5.26525 1.5 5.81309 1.5 6.38434V26.8461C1.5 27.4173 1.72693 27.9652 2.13085 28.3691C2.53478 28.7729 3.08262 29 3.65387 29H27.3464C27.9176 29 28.4656 28.7729 28.8694 28.3691C29.2733 27.9652 29.5003 27.4173 29.5003 26.8461V6.38434C29.5003 5.81309 29.2733 5.26525 28.8694 4.86132C28.4656 4.4574 27.9176 4.23047 27.3464 4.23047H23.0387" stroke="#00B0D9" stroke-width="1.86669" stroke-linecap="round" stroke-linejoin="round"/>
@@ -145,10 +145,12 @@
                 <div class="h-[5px] w-full hidden lg:flex" style="background-image: linear-gradient(90deg, #DBC645 0%, #44A9EB 23%, #8343C7 56.5%, #371EBC 79%, #130769 100%);"></div>
             </div>
             <div class="flex justify-center mt-10">
-                <iframe class="w-full h-[189px] px-6 mb-[-35px] lg:mb-[-73px] lg:max-w-[898px] lg:h-[505px]" src="https://www.youtube.com/embed/zMmIo8Dafmo?si=Bm2hTlkn7XZr15E7" frameborder="0"></iframe>
+                <iframe class="w-full h-[189px] px-6 mb-[-35px] lg:mb-[-73px] lg:max-w-[898px] lg:h-[505px] lg:z-[2]" src="https://www.youtube.com/embed/zMmIo8Dafmo?si=Bm2hTlkn7XZr15E7" frameborder="0"></iframe>
             </div>
+            <div class="hidden lg:flex absolute w-[414px] h-[414px] rounded-[414px] blur-[100px] lg:z-[1] lg:bottom-[-130px] left-[9%]" style="background: rgba(0, 176, 217, 0.40);"></div>
+            <div class="hidden lg:flex absolute w-[414px] h-[414px] rounded-[414px] blur-[100px] lg:z-[1] lg:bottom-[-130px] right-[9%]" style="background: rgba(0, 176, 217, 0.40);"></div>
         </section>
-        <section id="speakers" class="bg-[#100D9D] py-[93px] lg:pt-[200px]">
+        <section id="speakers" class="bg-[#100D9D] py-[93px] lg:pt-[200px] lg:relative lg:z-[1]">
             <p class="text-white text-center text-xl font-rubik font-light lg:text-[36px]"><span class="text-[#00B0D9] font-medium">SPEAKERS</span> INTERNACIONAIS CONFIRMADOS</p>
             <div class="mt-11 lg:mt-[70px] mx-auto max-w-[322px] lg:max-w-[1089px]">
                 <div class="swiffy-slider slider-item-show5 slider-item-show2-sm slider-nav-visible slider-indicators-sm slider-pagination-huntington slider-nav-autoplay slider-nav-mousedrag">
@@ -514,7 +516,7 @@
                     </div>
                 </div>
             </div>
-            <div class="rounded-lg mt-20 border border-white border-solid lg:flex lg:h-[505px] lg:max-w-[1088px] lg:mx-auto" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.17) 0%, rgba(11, 240, 202, 0.17) 100%);">
+            <div class="rounded-lg mt-20 border border-white border-solid lg:flex lg:h-[505px] lg:max-w-[1088px] lg:mx-auto div-como-chegar" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.17) 0%, rgba(11, 240, 202, 0.17) 100%);">
                 <div>
                     <picture class="">
                         <source srcset="assets/Img/passaro_desk.png" media="(min-width: 1024px)">
@@ -574,7 +576,7 @@
                         <label for="bclassdesk" class="w-full flex justify-center rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1] cursor-pointer">
                             <div class="font-rubik flex flex-col justify-center items-center">
                                 <span class="text-[8px] text-[#EFEFEF] lg:text-xs lg:font-medium">BUSINESS CLASS</span>
-                                <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium">QUI • 10 de abril</span>
+                                <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium"><span class="date">QUI •</span>10 de abril</span>
                             </div>
                         </label>
                     </div>
@@ -583,7 +585,7 @@
                         <label for="primarydesk" class="w-full flex justify-center rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1] cursor-pointer">
                             <div class="font-rubik flex flex-col justify-center items-center">
                                 <span class="text-[8px] text-[#EFEFEF] lg:text-xs lg:font-medium">CONGRESSO • 1º DIA</span>
-                                <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium">SEX • 11 de abril</span>
+                                <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium"><span class="date">SEX •</span> 11 de abril</span>
                             </div>
                         </ç>
                     </div>
@@ -592,7 +594,7 @@
                         <label for="seconddesk" class="w-full flex justify-center rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1] cursor-pointer">
                             <div class="font-rubik flex flex-col justify-center items-center">
                                 <span class="text-[8px] text-[#EFEFEF] lg:text-xs lg:font-medium">CONGRESSO • 2º DIA</span>
-                                <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium">SAB • 11 de abril</span>
+                                <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium"><span class="date">SAB •</span> 11 de abril</span>
                             </div>
                         </ç>
                     </div>
@@ -605,7 +607,7 @@
                                 <label for="bclass" class="w-full rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1] cursor-pointer">
                                     <div class="font-rubik flex flex-col justify-center items-center">
                                         <span class="text-[8px] text-[#EFEFEF] lg:text-xs lg:font-medium">BUSINESS CLASS</span>
-                                        <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium">QUI • 10 de abril</span>
+                                        <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium"><span class="date">QUI • 10</span> de abril</span>
                                     </div>
                                 </label>
                             </li>
@@ -614,7 +616,7 @@
                                 <label for="primary" class="w-full rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1] cursor-pointer">
                                     <div class="font-rubik flex flex-col justify-center items-center">
                                         <span class="text-[8px] text-[#EFEFEF]">CONGRESSO • 1º DIA</span>
-                                        <span class="text-xs text-[#EFEFEF]">SEX • 11 de abril</span>
+                                        <span class="text-xs text-[#EFEFEF]"><span class="date">SEX •</span> 11 de abril</span>
                                     </div>
                                 </label>
                             </li>
@@ -623,7 +625,7 @@
                                 <label for="second" class="w-full rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1] cursor-pointer">
                                     <div class="font-rubik flex flex-col justify-center items-center">
                                         <span class="text-[8px] text-[#EFEFEF] lg:text-xs lg:font-medium">CONGRESSO • 2º DIA</span>
-                                        <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium">SAB • 11 de abril</span>
+                                        <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium"><span class="date">SAB •</span> 11 de abril</span>
                                     </div>
                                 </label>
                             </li>
@@ -653,16 +655,18 @@
                 <div class="grid grid-cols-2 gap-2 lg:gap-4">
                     <div class="sala-checked">
                         <input hidden checked  type="radio" name="salas" id="salaprincipal">
-                        <label for="salaprincipal" class="text-white flex flex-col justify-center items-center w text-xs lg:text-[22px] rounded-[3px] font-rubik h-12 lg:h-[100px] border border-solid border-[#01AFD9] cursor-pointer"  style="background: linear-gradient(90deg, rgba(176, 78, 225, 0.50) 0%, rgba(1, 175, 217, 0.50));">
-                            <span class="uppercase">Sala PRINCIPAL</span>
-                            <span class="text-[8px] lg:text-xs font-light lg:mt-2 lg:opacity-[0.8]">Clique aqui para ver mais</span>
+                        <label for="salaprincipal" class="text-white flex flex-col justify-center items-center w text-xs lg:text-[22px] rounded-[3px] lg:rounded-lg font-rubik h-12 lg:h-[100px] border border-solid border-[#01AFD9] cursor-pointer lg:font-normal"  style="background: linear-gradient(90deg, rgba(176, 78, 225, 0.50) 0%, rgba(1, 175, 217, 0.50));">
+                            <span class="uppercase lg:opacity-[0.8]">Sala PRINCIPAL</span>
+                            <span class="lg:hidden text-[8px] lg:text-xs font-light lg:mt-2 lg:opacity-[0.8]">Clique aqui para ver mais</span>
+                            <span class="hidden lg:flex text-[8px] lg:text-xs font-light lg:mt-2 lg:opacity-[0.8]">Clique aqui para ver a Programação da Sala Principal</span>
                         </label>
                     </div>
                     <div class="sala-checked">
                         <input hidden  type="radio" name="salas" id="laboratorio">
-                        <label for="laboratorio" class="text-white flex flex-col justify-center items-center w text-xs lg:text-[22px] rounded-[3px] font-rubik h-12 lg:h-[100px] border border-solid border-[#01AFD9] cursor-pointer" style="background: linear-gradient(90deg, rgba(176, 78, 225, 0.50) 0%, rgba(1, 175, 217, 0.50));">
-                            <span class="uppercase">Sala LABORATÓRIO</span>
-                            <span class="text-[8px] lg:text-xs font-light lg:mt-2 lg:opacity-[0.8]">Clique aqui para ver mais</span>
+                        <label for="laboratorio" class="text-white flex flex-col justify-center items-center w text-xs lg:text-[22px] rounded-[3px] lg:rounded-lg font-rubik h-12 lg:h-[100px] border border-solid border-[#01AFD9] cursor-pointer lg:font-normal" style="background: linear-gradient(90deg, rgba(176, 78, 225, 0.50) 0%, rgba(1, 175, 217, 0.50));">
+                            <span class="uppercase lg:opacity-[0.8]">Sala LABORATÓRIO</span>
+                            <span class="lg:hidden text-[8px] lg:text-xs font-light lg:mt-2 lg:opacity-[0.8]">Clique aqui para ver mais</span>
+                            <span class="hidden lg:flex text-[8px] lg:text-xs font-light lg:mt-2 lg:opacity-[0.8]">Clique aqui para ver a Programação da Sala Laboratório</span>
                         </label>
                     </div>
                 </div>
@@ -955,61 +959,61 @@
         <section id="faq" class="bg-[#100D9D] pt-[47px] lg:pt-[70px]">
             <h3 class="uppercase text-white text-xl font-rubik text-center lg:text-[32px] lg:leading-[150%] ">Perguntas Frequentes</h3>
             <div class="py-10 px-6 lg:pb-[70px] flex flex-col gap-3 lg:max-w-[834px] lg:mx-auto">
-                <details class="bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8 order-2">
+                <details class="relative bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 pr-[48px] font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8 lg:pr-[60px] order-2">
                     <summary class="flex justify-between">
                         <p class="max-w-[80%]">
                             A inscrição para participação da Sala Business também é válida para o congresso?
                         </p>
-                        <svg class="open lg:w-[24px] lg:h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <svg class="open lg:w-[24px] lg:h-auto absolute top-[50%] translate-y-[-50%] right-[25px]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M8 3.5V12.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M12.5 8H3.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <svg class="close lg:w-[24px] lg:h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <svg class="close lg:w-[24px] lg:h-auto absolute top-[50%] translate-y-[-50%] right-[25px]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M12.5 8H3.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </summary>
                     <p class="text-xs mt-4 lg:text-xs">Não, para participar do congresso nos dias 11 e 12, é necessário realizar outra inscrição para estas datas.</p>
                 </details>
-                <details class="bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8 order-1">
+                <details class="relative bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 pr-[48px] font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8 lg:pr-[60px] order-1">
                     <summary class="flex justify-between">
                         <p class="max-w-[80%]">
                             A inscrição é válida para os dois dias de congresso?
                         </p>
-                        <svg class="open lg:w-[24px] lg:h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <svg class="open lg:w-[24px] lg:h-auto absolute top-[50%] translate-y-[-50%] right-[25px]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M8 3.5V12.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M12.5 8H3.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <svg class="close lg:w-[24px] lg:h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <svg class="close lg:w-[24px] lg:h-auto absolute top-[50%] translate-y-[-50%] right-[25px]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M12.5 8H3.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </summary>
                     <p class="text-xs mt-4 lg:text-xs">Sim</p>
                 </details>
-                <details class="bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8 order-3">
+                <details class="relative bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 pr-[48px] font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8 lg:pr-[60px] order-3">
                     <summary class="flex justify-between">
                         <p class="max-w-[80%]">
                             Posso parcelar o valor da inscrição?
                         </p>
-                        <svg class="open lg:w-[24px] lg:h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <svg class="open lg:w-[24px] lg:h-auto absolute top-[50%] translate-y-[-50%] right-[25px]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M8 3.5V12.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M12.5 8H3.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <svg class="close lg:w-[24px] lg:h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <svg class="close lg:w-[24px] lg:h-auto absolute top-[50%] translate-y-[-50%] right-[25px]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M12.5 8H3.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </summary>
                     <p class="text-xs mt-4 lg:text-xs">Sim, os valores estarão disponíveis no ato da compra.</p>
                 </details>
-                <details class="bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8 order-4">
+                <details class="relative bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 pr-[48px] font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8 lg:pr-[60px] order-4">
                     <summary class="flex justify-between">
                         <p class="max-w-[80%]">
                             Qual a política de cancelamento/reembolso?
                         </p>
-                        <svg class="open lg:w-[24px] lg:h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <svg class="open lg:w-[24px] lg:h-auto absolute top-[50%] translate-y-[-50%] right-[25px]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M8 3.5V12.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M12.5 8H3.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <svg class="close lg:w-[24px] lg:h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <svg class="close lg:w-[24px] lg:h-auto absolute top-[50%] translate-y-[-50%] right-[25px]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M12.5 8H3.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </summary>
@@ -1038,7 +1042,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-[#050375] lg:bg-[#100D9D] text-white px-[26px] font-rubik ">
+        <section class="bg-[#050375] lg:bg-[#050375] text-white px-[26px] font-rubik ">
             <div class="lg:max-w-[1089px] lg:w-full lg:mx-auto">
                 <div id="como-chegar" class="lg:flex lg:py-[94px] lg:w-full">
                     <div class="lg:w-full">
