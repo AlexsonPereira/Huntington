@@ -164,3 +164,119 @@ details[open] summary .close {
 details summary .close {
   display: none;
 }
+
+#newsletter {
+  #rd-row-m4wumrpx .bricks--column > div {
+    padding: 0px;
+  }
+
+  #rd-section-m4wumrps {
+    background-color: transparent;
+  }
+
+  #rd-form-m4wumrpz .bricks-form__field.bricks-form__privacy {
+    display: none;
+  }
+
+  #rd-form-m4wumrpz .bricks-form__field.bricks-form__terms {
+    display: none;
+  }
+
+  #rd-form-m4wumrpz .bricks-form__input:not(textarea) {
+    height: 45px;
+    background-color: transparent;
+    border-radius: 8px;
+    padding-left: 16px;
+    font-size: 12px;
+
+    ::placeholder {
+      color: white;
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #rd-form-m4wumrpz .bricks-form__input:not(textarea) {
+      font-size: 14px;
+
+      ::placeholder {
+        font-size: 14px;
+      }
+    }
+  }
+
+  #rd-form-m4wumrpz .bricks-form__input:not(textarea):focus-visible {
+    outline: none;
+  }
+
+  #rd-button-m4wumrq4.bricks--component-button {
+    text-transform: uppercase;
+    height: 40px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    font-family: "Rubik";
+  }
+
+  #rdstation-bricks-embeddable-form-bricks-component-Jv__gyc6ms9y-ShGmQ4NMA
+    .bricks-form {
+    padding: 0px;
+  }
+
+  #rd-form-m4wumrpz .bricks-form__fieldset {
+    width: 100%;
+  }
+
+  #conversion-form-newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+#bricks-component-QrNJ4vRc1wb4e3Re5h5Egw-wrapper{
+  display: none;
+}
+
+
+.btn-programacao label::before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px; /* Tamanho da borda externa */
+  background: linear-gradient(90deg, #B04EE1 0%, #01AFD9 100%); /* Gradiente da borda */
+  z-index: -1; /* Fica atrás do conteúdo */
+  border-radius: inherit; /* Mesma borda arredondada do label */
+}
+
+.btn-programacao label{
+  position: relative;
+  z-index: 0;
+  background-color: #02024d; /* Fundo interno */
+  border-radius: 57px; /* Arredondamento da borda */
+}
+
+.btn-programacao input:checked ~ label{
+  background-image: linear-gradient(90deg, #B04EE1 0%, #01AFD9 100%); 
+}
+
+
+.sala-checked input:checked ~ label{
+  background: linear-gradient(90deg, #B04EE1 0%, #01AFD9 100%) !important;
+}
+
+.elemento {
+  position: relative;
+  background: linear-gradient(to right, red, blue); /* Gradiente */
+  padding: 10px; /* Espaço interno */
+  border-radius: 10px; /* Para bordas arredondadas */
+
+  /* Ajusta a sobreposição do fundo */
+  z-index: 0;
+}
+

@@ -97,16 +97,16 @@
                 <li>
                     <a target="_blank" href="https://www.sympla.com.br/evento/6-congresso-internacional-huntington-de-medicina-reprodutiva/2749066 ">
                         <picture>
-                            <source srcset="assets/Img/banners/principal/banner_principal_mobile.png" media="(max-width: 768px)">
-                            <img class="w-full" src="assets/Img/banners/principal/banner_principal_desktop.png" alt="">
+                            <source srcset="assets/Img/banners/principal/banner-mobile.png" media="(max-width: 768px)">
+                            <img class="w-full" src="assets/Img/banners/principal/banner-desk.png" alt="">
                         </picture>
                     </a>
                 </li>
                 <li>
                     <a target="_blank" href="https://www.sympla.com.br/evento/6-congresso-internacional-huntington-de-medicina-reprodutiva/2749066 ">
                         <picture>
-                            <source srcset="assets/Img/banners/principal/banner_principal_mobile.png" media="(max-width: 768px)">
-                            <img class="w-full" src="assets/Img/banners/principal/banner_principal_desktop.png" alt="">
+                            <source srcset="assets/Img/banners/principal/banner-mobile.png" media="(max-width: 768px)">
+                            <img class="w-full" src="assets/Img/banners/principal/banner-desk.png" alt="">
                         </picture>
                     </a>
                 </li>
@@ -122,7 +122,7 @@
                 </svg>
             </button>
 
-            <ul class="slider-indicators" style="bottom: 50px;">
+            <ul class="slider-indicators lg:!bottom-[50px]">
                 <li class="active"></li>
                 <li ></li>
             </ul>
@@ -380,7 +380,7 @@
                         </svg>
                     </button>
                     <div class="mt-[35px] lg:mt-[30px] lg:flex lg:justify-center">
-                        <button class="btn-secondary w-full h-10 lg:max-w-[204px] lg:h-[45px]">VER AGENDA</button>
+                        <button class="btn-secondary w-full h-10 lg:max-w-[204px] lg:h-[45px]"><a href="#programacao">VER AGENDA</a></button>
                     </div>
 
                     <ul class="slider-indicators lg:!bottom-[-60px]" style="bottom: -50px;">
@@ -474,22 +474,22 @@
                         <ul class="slider-container">
                             <li class="w-full h-full">
                                 <div>
-                                    <img loading="lazy" class="w-[329px] lg:w-full lg:h-[452px] h-[328px] object-cover" src="./assets/Img/FotosCongresso/Huntington-35.jpg" alt="">
+                                    <img loading="lazy" class="w-full lg:w-full lg:h-[452px] h-[328px] object-cover" src="./assets/Img/FotosCongresso/Huntington-35.jpg" alt="">
                                 </div>
                             </li>
                             <li class="w-full h-full">
                                 <div>
-                                    <img loading="lazy" class="w-[329px] lg:w-full lg:h-[452px] h-[328px] object-cover" src="./assets/Img/FotosCongresso/Huntington-61.jpg" alt="">
+                                    <img loading="lazy" class="w-full lg:w-full lg:h-[452px] h-[328px] object-cover" src="./assets/Img/FotosCongresso/Huntington-61.jpg" alt="">
                                 </div>
                             </li>
                             <li class="w-full h-full">
                                 <div>
-                                    <img loading="lazy" class="w-[329px] lg:w-full lg:h-[452px] h-[328px] object-cover" src="./assets/Img/FotosCongresso/Huntington-65.jpg" alt="">
+                                    <img loading="lazy" class="w-full lg:w-full lg:h-[452px] h-[328px] object-cover" src="./assets/Img/FotosCongresso/Huntington-65.jpg" alt="">
                                 </div>
                             </li>
                             <li class="w-full h-full">
                                 <div>
-                                    <img loading="lazy" class="w-[329px] lg:w-full lg:h-[452px] h-[328px] object-cover" src="./assets/Img/FotosCongresso/Huntington-87.jpg" alt="">
+                                    <img loading="lazy" class="w-full lg:w-full lg:h-[452px] h-[328px] object-cover" src="./assets/Img/FotosCongresso/Huntington-87.jpg" alt="">
                                 </div>
                             </li>
                         </ul>
@@ -534,24 +534,24 @@
                     </button>
                 </div>
             </div>
-            <div class="flex flex-row items-center gap-2 mt-[60px] lg:justify-center" id="cronometro">
+            <div class="flex flex-row items-center justify-center gap-2 mt-[60px] lg:justify-center" id="cronometro">
                 <div class="bg-[#E3E3FF] flex flex-col rounded-full p-2 w-[67px] h-[67px] items-center justify-center lg:w-[140px] lg:h-[140px] lg:gap-1">
-                    <span class="font-rubik text-xl font-medium lg:text-[40px]">0</span>
+                    <span id="days" class="font-rubik text-xl font-medium lg:text-[40px]">0</span>
                     <span class="uppercase text-[9px] lg:text-xl">Dias</span>
                 </div>
                 <div class="w-[3px] h-[3px] rounded-full bg-[#00B0D9]"></div>
                 <div class="bg-[#E3E3FF] flex flex-col rounded-full p-2 w-[67px] h-[67px] items-center justify-center lg:w-[140px] lg:h-[140px] lg:gap-1">
-                    <span class="font-rubik text-xl font-medium lg:text-[40px]">0</span>
+                    <span id="hours" class="font-rubik text-xl font-medium lg:text-[40px]">0</span>
                     <span class="uppercase text-[9px] lg:text-xl">HORAS</span>
                 </div>
                 <div class="w-[3px] h-[3px] rounded-full bg-[#00B0D9]"></div>
                 <div class="bg-[#E3E3FF] flex flex-col rounded-full p-2 w-[67px] h-[67px] items-center justify-center lg:w-[140px] lg:h-[140px] lg:gap-1">
-                    <span class="font-rubik text-xl font-medium lg:text-[40px]">0</span>
+                    <span id="min" class="font-rubik text-xl font-medium lg:text-[40px]">0</span>
                     <span class="uppercase text-[9px] lg:text-xl">MIN</span>
                 </div>
                 <div class="w-[3px] h-[3px] rounded-full bg-[#00B0D9]"></div>
                 <div class="bg-[#E3E3FF] flex flex-col rounded-full p-2 w-[67px] h-[67px] items-center justify-center lg:w-[140px] lg:h-[140px] lg:gap-1">
-                    <span class="font-rubik text-xl font-medium lg:text-[40px]">0</span>
+                    <span id="secon" class="font-rubik text-xl font-medium lg:text-[40px]">0</span>
                     <span class="uppercase text-[9px] lg:text-xl">SEG</span>
                 </div>
             </div>
@@ -568,51 +568,63 @@
             </div>
             <div class="mt-5 px-14">
                 <div class="hidden lg:flex lg:gap-4 lg:mt-14">
-                    <div class="w-full rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1]">
-                        <div class="font-rubik flex flex-col justify-center items-center">
-                            <span class="text-[8px] text-[#EFEFEF] lg:text-xs lg:font-medium">BUSINESS CLASS</span>
-                            <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium">QUI • 10 de abril</span>
-                        </div>
+                    <div class="btn-programacao w-full">
+                        <input hidden  type="radio" name="programacaodesk" id="bclassdesk">
+                        <label for="bclassdesk" class="w-full flex justify-center rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1] cursor-pointer">
+                            <div class="font-rubik flex flex-col justify-center items-center">
+                                <span class="text-[8px] text-[#EFEFEF] lg:text-xs lg:font-medium">BUSINESS CLASS</span>
+                                <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium">QUI • 10 de abril</span>
+                            </div>
+                        </label>
                     </div>
-                    <div class="w-full rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px]" style="background-image: linear-gradient(90deg, #B04EE1 0%, #01AFD9 100%);">
-                        <div class="font-rubik flex flex-col justify-center items-center">
-                            <span class="text-[8px] text-[#EFEFEF] lg:text-xs lg:font-medium">CONGRESSO • 1º DIA</span>
-                            <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium">SEX • 11 de abril</span>
-                        </div>
+                    <div class="btn-programacao w-full">
+                        <input hidden checked  type="radio" name="programacaodesk" id="primarydesk">
+                        <label for="primarydesk" class="w-full flex justify-center rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1] cursor-pointer">
+                            <div class="font-rubik flex flex-col justify-center items-center">
+                                <span class="text-[8px] text-[#EFEFEF] lg:text-xs lg:font-medium">CONGRESSO • 1º DIA</span>
+                                <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium">SEX • 11 de abril</span>
+                            </div>
+                        </ç>
                     </div>
-                    <div class="w-full rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1]">
-                        <div class="font-rubik flex flex-col justify-center items-center">
-                            <span class="text-[8px] text-[#EFEFEF] lg:text-xs lg:font-medium">CONGRESSO • 2º DIA</span>
-                            <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium">SAB • 11 de abril</span>
-                        </div>
+                    <div class="btn-programacao w-full">
+                        <input hidden  type="radio" name="programacaodesk" id="seconddesk">
+                        <label for="seconddesk" class="w-full flex justify-center rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1] cursor-pointer">
+                            <div class="font-rubik flex flex-col justify-center items-center">
+                                <span class="text-[8px] text-[#EFEFEF] lg:text-xs lg:font-medium">CONGRESSO • 2º DIA</span>
+                                <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium">SAB • 11 de abril</span>
+                            </div>
+                        </ç>
                     </div>
                 </div>
                 <div class="lg:hidden">
-                    <div class="swiffy-slider slider-nav-visible slider-nav-mousedrag">
+                    <div class="swiffy-slider slider-nav-visible ">
                         <ul class="slider-container">
-                            <li class="flex justify-center w-full">
-                                <div class="w-full rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1]">
+                            <li class="flex justify-center w-full btn-programacao">
+                                <input hidden  type="radio" name="programacao" id="bclass">
+                                <label for="bclass" class="w-full rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1] cursor-pointer">
                                     <div class="font-rubik flex flex-col justify-center items-center">
                                         <span class="text-[8px] text-[#EFEFEF] lg:text-xs lg:font-medium">BUSINESS CLASS</span>
                                         <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium">QUI • 10 de abril</span>
                                     </div>
-                                </div>
+                                </label>
                             </li>
-                            <li class="flex justify-center w-full">
-                                <div class="w-full rounded-[57px] max-w-[178px] py-[6px]" style="background-image: linear-gradient(90deg, #B04EE1 0%, #01AFD9 100%);">
+                            <li class="flex justify-center w-full btn-programacao">
+                                <input hidden checked  type="radio" name="programacao" id="primary">
+                                <label for="primary" class="w-full rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1] cursor-pointer">
                                     <div class="font-rubik flex flex-col justify-center items-center">
                                         <span class="text-[8px] text-[#EFEFEF]">CONGRESSO • 1º DIA</span>
                                         <span class="text-xs text-[#EFEFEF]">SEX • 11 de abril</span>
                                     </div>
-                                </div>
+                                </label>
                             </li>
-                            <li class="flex justify-center w-full">
-                                <div class="w-full rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1]">
+                            <li class="flex justify-center w-full btn-programacao">
+                                <input hidden  type="radio" name="programacao" id="second">
+                                <label for="second" class="w-full rounded-[57px] max-w-[178px] lg:max-w-[312px] lg:py-[21px] py-[6px] border border-solid border-[#B04EE1] cursor-pointer">
                                     <div class="font-rubik flex flex-col justify-center items-center">
                                         <span class="text-[8px] text-[#EFEFEF] lg:text-xs lg:font-medium">CONGRESSO • 2º DIA</span>
                                         <span class="text-xs text-[#EFEFEF] lg:text-[22px] uppercase lg:mt-1 lg:font-medium">SAB • 11 de abril</span>
                                     </div>
-                                </div>
+                                </label>
                             </li>
                         </ul>
                         <button type="button" class="slider-nav">
@@ -638,14 +650,20 @@
             </div>
             <div class="px-6 mt-5">
                 <div class="grid grid-cols-2 gap-2 lg:gap-4">
-                    <button class="text-white flex flex-col justify-center items-center w text-xs lg:text-[22px] rounded-[3px] font-rubik h-12 lg:h-[100px]" style="background: linear-gradient(90deg, #B04EE1 0%, #01AFD9 100%);">
-                        <span class="uppercase">Sala PRINCIPAL</span>
-                        <span class="text-[8px] lg:text-xs font-light lg:mt-2 lg:opacity-[0.8]">Clique aqui para ver mais</span>
-                    </button>
-                    <button class="text-white flex flex-col justify-center items-center w text-xs lg:text-[22px] rounded-[3px] font-rubik h-12 lg:h-[100px] border border-solid border-[#01AFD9]" style="background: linear-gradient(90deg, rgba(176, 78, 225, 0.50) 0%, rgba(1, 175, 217, 0.50));">
-                        <span class="uppercase">Sala LABORATÓRIO</span>
-                        <span class="text-[8px] lg:text-xs font-light lg:mt-2 lg:opacity-[0.8]">Clique aqui para ver mais</span>
-                    </button>
+                    <div class="sala-checked">
+                        <input hidden checked  type="radio" name="salas" id="salaprincipal">
+                        <label for="salaprincipal" class="text-white flex flex-col justify-center items-center w text-xs lg:text-[22px] rounded-[3px] font-rubik h-12 lg:h-[100px] border border-solid border-[#01AFD9] cursor-pointer"  style="background: linear-gradient(90deg, rgba(176, 78, 225, 0.50) 0%, rgba(1, 175, 217, 0.50));">
+                            <span class="uppercase">Sala PRINCIPAL</span>
+                            <span class="text-[8px] lg:text-xs font-light lg:mt-2 lg:opacity-[0.8]">Clique aqui para ver mais</span>
+                        </label>
+                    </div>
+                    <div class="sala-checked">
+                        <input hidden  type="radio" name="salas" id="laboratorio">
+                        <label for="laboratorio" class="text-white flex flex-col justify-center items-center w text-xs lg:text-[22px] rounded-[3px] font-rubik h-12 lg:h-[100px] border border-solid border-[#01AFD9] cursor-pointer" style="background: linear-gradient(90deg, rgba(176, 78, 225, 0.50) 0%, rgba(1, 175, 217, 0.50));">
+                            <span class="uppercase">Sala LABORATÓRIO</span>
+                            <span class="text-[8px] lg:text-xs font-light lg:mt-2 lg:opacity-[0.8]">Clique aqui para ver mais</span>
+                        </label>
+                    </div>
                 </div>
                 <div class="flex justify-center items-center gap-6 rounded-lg h-[120px] lg:h-[193px] lg:mt-10 mt-2" style="background: linear-gradient(180deg, rgba(87, 203, 230, 0.60) -37.35%, rgba(16, 13, 157, 0.60) 62.65%)">
                     <svg class="lg:w-[60px] lg:h-[60px]" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
@@ -677,26 +695,26 @@
                 <div class="mb-10 lg:mb-[60px]">
                     <h3 class="font-rubik text-xl text-white font-light text-center lg:text-[28px]"><span class="font-medium text-[#00B0D9]">COMISSÃO</span> ORGANIZADORA</h3>
                 </div>
-                <div class="grid grid-cols-2 gap-1 lg:max-w-[590px] lg:mx-auto">
-                    <div class="flex justify-center items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                <div class="grid grid-cols-2 gap-1 lg:gap-5 lg:max-w-[590px] lg:mx-auto">
+                    <div spot-person class="flex justify-between items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                         <img loading="lazy" class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" src="./assets/Img/Fotos comissão científica/Maurício Chehin Huntington Sena Madureira_FT Beto Assem-5454.jpg" style="object-position: 0px 0px;" alt="">
-                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                            <span>Maurício Barbour Chehin</span>
+                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center" >
+                            <span class="name-person">Maurício Barbour Chehin</span>
                             <span class="lg:font-light text-center">CRM-SP 108.063</span>
                         </div>
                         <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                         <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Diretor Científico do Grupo Huntington de Medicina Reprodutiva</p>
-                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                     </div>
-                    <div class="flex justify-center items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                    <div spot-person class="flex justify-between items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                         <img loading="lazy" class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" src="./assets/Img/Fotos comissão científica/ALINE LORENZON_IBI.jpg" style="object-position: 0px -20px;" alt="">
-                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                            <span>Aline Lorenzon</span>
+                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center" >
+                            <span class="name-person">Aline Rodrigues Lorenzon</span>
                             <span class="lg:font-light hidden">CRM/SP 58.345</span>
                         </div>
                         <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                         <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Pesquisadora na área de Reprodução</p>
-                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                     </div>
                 </div>
             </div>
@@ -711,111 +729,111 @@
                         <div class="swiffy-slider slider-nav-visible slider-item-show2-sm slider-indicators-sm slider-pagination-huntington slider-nav-mousedrag" style="--swiffy-slider-item-gap: 4px">
                             <ul class="slider-container">
                                 <li>
-                                    <div class="flex justify-center items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                                    <div spot-person class="flex justify-between items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                         <img loading="lazy" class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" style="object-position: 0px 2px;" src="./assets/Img/Fotos comissão científica/Eduardo Motta (1).png" alt="">
-                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                            <span>Eduardo Motta</span>
+                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center" >
+                                            <span class="name-person">Eduardo Motta</span>
                                             <span class="lg:font-light text-center">CREMESP 58.933</span>
                                         </div>
                                         <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                         <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Fundador da Huntington e Especialista em Reprodução Assistida</p>
-                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="flex justify-center items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                                    <div spot-person class="flex justify-between items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                         <img loading="lazy" class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" style="object-position: 0px 1px;" src="./assets/Img/Fotos comissão científica/Claudia Gomes Padilla.jpg" alt="">
-                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                            <span>Cláudia Gomes Padilla</span>
+                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center" >
+                                            <span class="name-person">Cláudia Gomes Padilla</span>
                                             <span class="lg:font-light text-center">CREMESP 114.419</span>
                                         </div>
                                         <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                         <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Co-diretora médica da Huntington e Coordenadora da unidade Huntington Ibirapuera</p>
-                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="flex justify-center items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                                    <div spot-person class="flex justify-between items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                         <img loading="lazy" class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" src="./assets/Img/Fotos comissão científica/Thais Domingues  (1).jpg" alt="">
-                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                            <span>Thais Sanches Domingues Cury</span>
+                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center" >
+                                            <span class="name-person">Thais Sanches Domingues Cury</span>
                                             <span class="lg:font-light text-center">CRM-SP 104.252</span>
                                         </div>
                                         <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                         <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Doutora em Reprodução Humana e sócia da Huntington Medicina Reprodutiva</p>
-                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="flex justify-center items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                                    <div spot-person class="flex justify-between items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                         <img loading="lazy" class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" style="object-position: 0px 0px;" src="./assets/Img/Fotos comissão científica/Michele Panzan  (1).jpg" alt="">
-                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                            <span>Michele Q. Panzan</span>
+                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center" >
+                                            <span class="name-person">Michele Q. Panzan</span>
                                             <span class="lg:font-light text-center">CRM-SP 88.479</span>
                                         </div>
                                         <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                         <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Especialista em Reprodução Assistida e Coordenadora médica da unidade Huntington Campinas</p>
-                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="flex justify-center items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                                    <div spot-person class="flex justify-between items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                         <img loading="lazy" class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" style="object-position: 0px 0px;" src="./assets/Img/Fotos comissão científica/José Roberto Alegrette .jpg" alt="">
-                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                            <span>José Roberto Alegretti</span>
+                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center" >
+                                            <span class="name-person">José Roberto Alegretti</span>
                                             <span class="lg:font-light text-center">CRBio 31.580-01</span>
                                         </div>
                                         <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                         <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Diretor dos laboratórios de Embriologia do Grupo Huntington</p>
-                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="flex justify-center items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                                    <div spot-person class="flex justify-between items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                         <img loading="lazy" class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" src="./assets/Img/Fotos comissão científica/Maurício Chehin Huntington Sena Madureira_FT Beto Assem-5454.jpg" style="object-position: 0px 0px;" alt="">
-                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                            <span>Maurício Barbour Chehin</span>
+                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center" >
+                                            <span class="name-person">Maurício Barbour Chehin</span>
                                             <span class="lg:font-light text-center">CRM-SP 108.063</span>
                                         </div>
                                         <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                         <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Diretor Científico do Grupo Huntington de Medicina Reprodutiva</p>
-                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="flex justify-center items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                                    <div spot-person class="flex justify-between items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                         <img loading="lazy" class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" src="./assets/Img/Fotos comissão científica/João Pedro Junqueira.jpg" alt="">
-                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                            <span>João Pedro Junqueira Caetano</span>
+                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center" >
+                                            <span class="name-person">João Pedro Junqueira Caetano</span>
                                             <span class="lg:font-light text-center">CRM-MG 22.196</span>
                                         </div>
                                         <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                         <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Diretor médico do Grupo Huntington e Diretor clínico da Huntington Pró-Criar</p>
-                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="flex justify-center items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                                    <div spot-person class="flex justify-between items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                         <img loading="lazy" class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" style="object-position: 0px -8px;" src="./assets/Img/Fotos comissão científica/Dr. Ricardo Marinho  (1).jpg" alt="">
-                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                            <span>Ricardo Mello Marinho</span>
+                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center" >
+                                            <span class="name-person">Ricardo Mello Marinho</span>
                                             <span class="lg:font-light text-center">CRM-MG 14.265</span>
                                         </div>
                                         <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                         <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Diretor científico da Huntington Pró-Criar</p>
-                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="flex justify-center items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                                    <div spot-person class="flex justify-between items-center h-full flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                         <img loading="lazy" class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" src="./assets/Img/Fotos comissão científica/ALINE LORENZON_IBI.jpg" style="object-position: 0px -20px;" alt="">
-                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                            <span>Aline Rodrigues Lorenzon</span>
+                                        <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center" >
+                                            <span class="name-person">Aline Rodrigues Lorenzon</span>
                                             <span class="lg:font-light text-center hidden">CRM-MG 22.196</span>
                                         </div>
                                         <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                         <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Pesquisadora na área de Reprodução</p>
-                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                        <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                                     </div>
                                 </li>
                             </ul>
@@ -837,95 +855,95 @@
                     </div>
                     <div class="hidden lg:flex">
                         <div class="grid grid-cols-3 max-w-[895px] gap-5 lg:mx-auto">
-                            <div class="flex justify-center items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                            <div spot-person class="flex justify-between items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                 <img loading="lazy" class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" style="object-position: 0px 2px;" src="./assets/Img/Fotos comissão científica/Eduardo Motta (1).png" alt="">
-                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                    <span>Eduardo Motta</span>
+                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center">
+                                    <span class="name-person">Eduardo Motta</span>
                                     <span class="lg:font-light text-center">CREMESP 58.933</span>
                                 </div>
                                 <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                 <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Fundador da Huntington e Especialista em Reprodução Assistida</p>
-                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                             </div>
-                            <div class="flex justify-center items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                            <div spot-person class="flex justify-between items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                 <img class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" style="object-position: 0px 1px;" src="./assets/Img/Fotos comissão científica/Claudia Gomes Padilla.jpg" alt="">
-                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                    <span>Cláudia Gomes Padilla</span>
+                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center">
+                                    <span class="name-person">Cláudia Gomes Padilla</span>
                                     <span class="lg:font-light text-center">CREMESP 114.419</span>
                                 </div>
                                 <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                 <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Co-diretora médica da Huntington e Coordenadora da unidade Huntington Ibirapuera</p>
-                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                             </div>
-                            <div class="flex justify-center items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                            <div spot-person class="flex justify-between items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                 <img class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" src="./assets/Img/Fotos comissão científica/Thais Domingues  (1).jpg" alt="">
-                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                    <span>Thais Sanches Domingues Cury</span>
+                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center">
+                                    <span class="name-person">Thais Sanches Domingues Cury</span>
                                     <span class="lg:font-light text-center">CRM-SP 104.252</span>
                                 </div>
                                 <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                 <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Doutora em Reprodução Humana e sócia da Huntington Medicina Reprodutiva</p>
-                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                             </div>
-                            <div class="flex justify-center items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                            <div spot-person class="flex justify-between items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                 <img class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" style="object-position: 0px 0px;" src="./assets/Img/Fotos comissão científica/Michele Panzan  (1).jpg" alt="">
-                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                    <span>Michele Q. Panzan</span>
+                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center">
+                                    <span class="name-person">Michele Q. Panzan</span>
                                     <span class="lg:font-light text-center">CRM-SP 88.479</span>
                                 </div>
                                 <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                 <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Especialista em Reprodução Assistida e Coordenadora médica da unidade Huntington Campinas</p>
-                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                             </div>
-                            <div class="flex justify-center items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                            <div spot-person class="flex justify-between items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                 <img class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" style="object-position: 0px 0px;" src="./assets/Img/Fotos comissão científica/José Roberto Alegrette .jpg" alt="">
-                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                    <span>José Roberto Alegretti</span>
+                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center">
+                                    <span class="name-person">José Roberto Alegretti</span>
                                     <span class="lg:font-light text-center">CRBio 31.580-01</span>
                                 </div>
                                 <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                 <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Diretor dos laboratórios de Embriologia do Grupo Huntington</p>
-                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                             </div>
-                            <div class="flex justify-center items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                            <div spot-person class="flex justify-between items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                 <img class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" src="./assets/Img/Fotos comissão científica/Maurício Chehin Huntington Sena Madureira_FT Beto Assem-5454.jpg" style="object-position: 0px 0px;" alt="">
-                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                    <span>Maurício Barbour Chehin</span>
+                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center">
+                                    <span class="name-person">Maurício Barbour Chehin</span>
                                     <span class="lg:font-light text-center">CRM-SP 108.063</span>
                                 </div>
                                 <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                 <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Diretor Científico do Grupo Huntington de Medicina Reprodutiva</p>
-                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                             </div>
-                            <div class="flex justify-center items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                            <div spot-person class="flex justify-between items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                 <img class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" src="./assets/Img/Fotos comissão científica/João Pedro Junqueira.jpg" alt="">
-                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                    <span>João Pedro Junqueira Caetano</span>
+                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center">
+                                    <span class="name-person">João Pedro Junqueira Caetano</span>
                                     <span class="lg:font-light text-center">CRM-MG 22.196</span>
                                 </div>
                                 <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                 <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Diretor médico do Grupo Huntington e Diretor clínico da Huntington Pró-Criar</p>
-                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                             </div>
-                            <div class="flex justify-center items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                            <div spot-person class="flex justify-between items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                 <img class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" style="object-position: 0px -8px;" src="./assets/Img/Fotos comissão científica/Dr. Ricardo Marinho  (1).jpg" alt="">
-                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                    <span>Ricardo Mello Marinho</span>
+                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center">
+                                    <span class="name-person">Ricardo Mello Marinho</span>
                                     <span class="lg:font-light text-center">CRM-MG 14.265</span>
                                 </div>
                                 <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                 <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Diretor científico da Huntington Pró-Criar</p>
-                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                             </div>
-                            <div class="flex justify-center items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
+                            <div spot-person class="flex justify-between items-center flex-col rounded-lg border border-solid text-white font-rubik border-[#00B0D9] ">
                                 <img class="mt-4 lg:mt-8 w-[71px] lg:w-[132px] h-[71px] lg:h-[132px] rounded-full object-cover" style="object-position: 0px -20px;" src="./assets/Img/Fotos comissão científica/ALINE LORENZON_IBI.jpg" alt="">
-                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4">
-                                    <span>Aline Rodrigues Lorenzon</span>
+                                <div class="text-[10px] lg:text-base flex flex-col mb-2 mt-4 lg:mt-8 lg:mb-4 px-1 text-center">
+                                    <span class="name-person">Aline Rodrigues Lorenzon</span>
                                     <span class="lg:font-light text-center hidden">CRM-MG 22.196</span>
                                 </div>
                                 <div class="w-[90px] lg:w-[157px] bg-[#00B0D9] h-[1px]"></div>
                                 <p class="text-[9px] text-center mt-2 lg:mt-4 px-3 lg:text-base lg:max-w-[80%] lg:font-light">Pesquisadora na área de Reprodução</p>
-                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm">VER BIO</span>
+                                <span class="underline font-light mt-2 lg:mt-6 pb-4 lg:pb-10 text-[11px] lg:text-sm cursor-pointer" onclick="showCv(this)" >VER BIO</span>
                             </div>
                         </div>
                     </div>
@@ -936,7 +954,7 @@
         <section id="faq" class="bg-[#100D9D] pt-[47px] lg:pt-[70px]">
             <h3 class="uppercase text-white text-xl font-rubik text-center lg:text-[32px] lg:leading-[150%] ">Perguntas Frequentes</h3>
             <div class="py-10 px-6 lg:pb-[70px] flex flex-col gap-3 lg:max-w-[834px] lg:mx-auto">
-                <details class="bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8">
+                <details class="bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8 order-2">
                     <summary class="flex justify-between">
                         <p class="max-w-[80%]">
                             A inscrição para participação da Sala Business também é válida para o congresso?
@@ -951,7 +969,7 @@
                     </summary>
                     <p class="text-xs mt-4 lg:text-xs">Não, para participar do congresso nos dias 11 e 12, é necessário realizar outra inscrição para estas datas.</p>
                 </details>
-                <details class="bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8">
+                <details class="bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8 order-1">
                     <summary class="flex justify-between">
                         <p class="max-w-[80%]">
                             A inscrição é válida para os dois dias de congresso?
@@ -966,7 +984,7 @@
                     </summary>
                     <p class="text-xs mt-4 lg:text-xs">Sim</p>
                 </details>
-                <details class="bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8">
+                <details class="bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8 order-3">
                     <summary class="flex justify-between">
                         <p class="max-w-[80%]">
                             Posso parcelar o valor da inscrição?
@@ -981,7 +999,7 @@
                     </summary>
                     <p class="text-xs mt-4 lg:text-xs">Sim, os valores estarão disponíveis no ato da compra.</p>
                 </details>
-                <details class="bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8">
+                <details class="bg-[#FFFFFF26] text-white font-rubik text-sm py-6 px-4 font-light border-b border-solid border-[#FFFFFF80] open:border-white lg:text-base lg:px-8 order-4">
                     <summary class="flex justify-between">
                         <p class="max-w-[80%]">
                             Qual a política de cancelamento/reembolso?
@@ -994,7 +1012,7 @@
                             <path d="M12.5 8H3.5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </summary>
-                    <p class="text-xs mt-4 lg:text-xs">Pode ser solicitado o cancelamento da inscrição no prazo de até 7 (sete) dias após o pagamento. Para cancelamentos solicitados a partir do dia 1º de março de 2025, não haverá estorno/devolução dos valores pagos. Acesse nossa política de cancelamento para mais informações: [link da política de cancelamento].</p>
+                    <p class="text-xs mt-4 lg:text-xs">Pode ser solicitado o cancelamento da inscrição no prazo de até 7 (sete) dias após o pagamento. Para cancelamentos solicitados a partir do dia 1º de março de 2025, não haverá estorno/devolução dos valores pagos. Acesse nossa política de cancelamento para mais informações: <a class="underline" href="./cancelamento.html">política de cancelamento</a>.</p>
                 </details>
             </div>
         </section>
@@ -1011,18 +1029,19 @@
                         </svg>
                     </span>
                 </div>
-                <form class="mt-6 flex flex-col gap-3 lg:w-[452px] lg:mt-0" action="">
-                    <input class="border border-white border-solid bg-transparent h-[45px] rounded-[4px] w-full pl-4 placeholder:text-xs lg:placeholder:text-sm focus-visible:outline-none" type="text" placeholder="Nome Completo">
-                    <input class="border border-white border-solid bg-transparent h-[45px] rounded-[4px] w-full pl-4 placeholder:text-xs lg:placeholder:text-sm focus-visible:outline-none" type="text" placeholder="Endereço de e-mail">
-                    <button class="bg-white font-medium text-[#100D9D] h-10 lg:h-[45px] text-xs">INSCREVA-SE</button>
-                </form>
+            
+                <div class="w-full lg:max-w-[432px] max" id="newsletter">
+                    <div role="main" id="newsletter-b9f460110ceba49ef19e"></div>
+                    <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+                    <script type="text/javascript"> new RDStationForms('newsletter-b9f460110ceba49ef19e', 'UA-31224446-11').createForm();</script>
+                </div>
             </div>
         </section>
         <section class="bg-[#050375] lg:bg-[#100D9D] text-white px-[26px] font-rubik ">
             <div class="lg:max-w-[1089px] lg:w-full lg:mx-auto">
-                <div id="como-chegar" class="lg:flex py-[94px] lg:w-full">
+                <div id="como-chegar" class="lg:flex lg:py-[94px] lg:w-full">
                     <div class="lg:w-full">
-                        <h3 class="uppercase text-xl lg:text-[32px] pt-[60px] mb-8 mt-5">como chegar</h3>
+                        <h3 class="uppercase text-xl lg:text-[32px] pt-[60px] mb-8 lg:mt-5">como chegar</h3>
                         <span class="flex font-medium mb-6 lg:text-2xl">Endereço:</span>
                         <p class="text-xs lg:text-lg leading-5">
                             Hotel Tivoli Mofarrej <br>
@@ -1079,23 +1098,23 @@
                 </div>
             </div>
         </section>
-        <div id="cv" class="fixed top-0 left-0 w-screen h-screen bg-[#0000005c] z-[5555] flex hidden justify-center items-center">
-            <div class="bg-[#CAF5FF] px-6 lg:px-14 py-10 overflow-auto relative max-w-[90%] lg:max-w-[1006px] w-fit max-h-[703px] rounded-2xl lg:flex lg:flex-wrap">
+        <div id="cv" class="fixed top-0 left-0 w-screen h-screen bg-[#0000005c] z-[5555] hidden justify-center items-center">
+            <div class="bg-[#CAF5FF] px-6 lg:px-14 py-10 overflow-auto relative max-w-[90%] lg:max-w-[1006px] w-fit max-h-[90%] lg:max-h-[703px] rounded-2xl lg:flex lg:flex-wrap">
                 <div class="lg:order-1 border border-solid border-[#100D9D] rounded-lg font-rubik py-3 flex justify-center flex-col items-center max-w-[155px] lg:max-w-[304px]">
-                    <img class="w-[103px] h-[103px] lg:w-[160px] lg:h-[160px] object-cover rounded-md" src="./assets/Img/Fotos comissão científica/Eduardo Motta (1).png" alt="">
+                    <img id="image-cv" class="w-[103px] h-[103px] lg:w-[160px] lg:h-[160px] object-cover rounded-md" src="./assets/Img/Fotos comissão científica/Eduardo Motta (1).png" alt="">
                     <div class="flex flex-col gap-1 lg:gap-2 mt-3 px-3">
-                        <p class="text-[9px] lg:text-lg text-[#050375] text-center">Eduardo leme alves da mota</p>
-                        <p class="text-[8px] lg:text-base text-[#00B0D9] text-center">CRM 58.933 – RQE 43681</p>
+                        <p class="text-[9px] lg:text-lg text-[#050375] text-center" id="name-cv">Eduardo leme alves da mota</p>
+                        <p class="text-[8px] lg:text-base text-[#00B0D9] text-center" id="subtitle-cv">CRM 58.933 – RQE 43681</p>
                     </div>
                 </div>
                 <div class="mt-6 lg:mt-10 lg:order-3">
-                    <p class="font-rubik text-xs text-[#252525] leading-[22px] font-light lg:text-base lg:w-full lg:leading-[28px]">Diretor do Grupo Huntington, desde 1995;Corresponsável pelo Centro de Reprodução Humana Santa Joana;Professor Adjunto do Departamento de Ginecologia da Escola Paulista de Medicina – Unifesp;Especialização em Reprodução Humana na Huntington Reproductive Center, Califórnia – EUA;Mestrado e Doutorado em Medicina pelo Departamento de Ginecologia – Escola Paulista de Medicina Unifesp;Especialização em Ginecologia e Obstetrícia pela FEBRASGO;Residência Médica em Ginecologia e Obstetrícia pela Escola Paulista de Medicina;Médico formado pela Faculdade de Ciências Médicas da Pontifícia Universidade Católica de Campinas.</p>
+                    <p id="description-cv" class="font-rubik text-xs text-[#252525] leading-[22px] font-light lg:text-base lg:w-full lg:leading-[28px]">Diretor do Grupo Huntington, desde 1995;Corresponsável pelo Centro de Reprodução Humana Santa Joana;Professor Adjunto do Departamento de Ginecologia da Escola Paulista de Medicina – Unifesp;Especialização em Reprodução Humana na Huntington Reproductive Center, Califórnia – EUA;Mestrado e Doutorado em Medicina pelo Departamento de Ginecologia – Escola Paulista de Medicina Unifesp;Especialização em Ginecologia e Obstetrícia pela FEBRASGO;Residência Médica em Ginecologia e Obstetrícia pela Escola Paulista de Medicina;Médico formado pela Faculdade de Ciências Médicas da Pontifícia Universidade Católica de Campinas.</p>
                 </div>
                 <div class="mt-8 lg:order-2 lg:ml-[60px]">
                     <h4 class="text-[#00B0D9] uppercase font-rubik font-medium lg:text-xl">Palestras</h4>
                     <p class="font-rubik mt-2 text-xs lg:text-base">Aguarde! Programação em breve</p>
                 </div>
-                <div class="absolute top-5 right-5">
+                <div class="absolute top-5 right-5 cursor-pointer" onclick="showAndHiddenCv()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                         <path d="M13 1L1 13.3429" stroke="#050375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M1 1L13 13.3429" stroke="#050375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
