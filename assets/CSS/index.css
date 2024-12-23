@@ -278,3 +278,8 @@ details summary .close {
 .loading{
   animation: spin 2s linear infinite;
 }
+
+
+summary::-webkit-details-marker {
+  display: none
+}
