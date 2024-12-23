@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
 const peoples = [
     {
         name: "Eduardo Motta",
-        subtitle:"CREMESP 58.933 - RQE/RA 436.811",
+        subtitle:"CRM-SP 58.933 - RQE/RA 436.811",
         image: "./assets/Img/Fotos CV/EDUARDO.png",
         description:`Fundador da Huntington;<br>
             Corresponsável pelo Centro de Reprodução Humana Santa Joana;<br>
@@ -26,8 +26,8 @@ const peoples = [
             Médico formado pela Faculdade de Ciências Médicas da Pontifícia Universidade Católica de Campinas.`
     },
     {
-        name: "Cláudia Gomes Padilla",
-        subtitle:"CREMESP 114.419 - RQE/RA 66.0891",
+        name: "Claudia Gomes Padilla",
+        subtitle:"CRM-SP 114.419 - RQE/RA 66.0891",
         image: "./assets/Img/Fotos CV/CLAUDIA.jpg",
         description:`Coordenadora médica das unidades Ibirapuera e Brasília;<br>
 Certificado de área de atuação de reprodução assistida pela Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO)<br>
@@ -37,7 +37,7 @@ Residência Médica em Ginecologia e Obstetrícia pelo Hospital das Clínicas da
 Médica formada pela Universidade Federal do Paraná.`
     },
     {
-        name: "Thais Sanches Domingues Cury",
+        name: "Thais Domingues",
         subtitle:"CRM-SP 104.252 - RQE/RA 97.7111",
         image: "./assets/Img/Fotos CV/THAIS.jpg",
         description:`Revisora da revista científica Human Reproduction Archives (SBRH);<br>
@@ -50,7 +50,7 @@ Residência Médica em Obstetrícia e Ginecologia pela Escola Paulista de Medici
 Médica formada pela Unesp – Faculdade de Ciências Médicas Júlio de Mesquita Filho.`
     },
     {
-        name: "Michele Q. Panzan",
+        name: "Michele Panzan",
         subtitle:"CRM-SP 88.479 - RQE/RA 434363",
         image: "./assets/Img/Fotos CV/MICHELE.jpg",
         description:`Coordenadora médica da Unidade de Campinas;<br>
@@ -77,7 +77,7 @@ Especialista em Micromanipulação de Gametas pelo Institute for Reproductive Me
 Embriologista desde 1995.`
     },
     {
-        name: "Maurício Barbour Chehin",
+        name: "Maurício Chehin",
         subtitle:"CRM-SP 108.063 - RQE/RA 253.482",
         image: "./assets/Img/Fotos CV/MAURICIO.jpg",
         description:`Coordenador Médico e Responsável Técnico da Unidade Vila Mariana;<br>
@@ -111,7 +111,7 @@ Título de Habilitação em Reprodução Assistida pela FEBRASGO/AMB;<br>
 Título de Capacitação em Reprodução Assistida pela SBRA – Sociedade Brasileira de Reprodução Assistida.`
     },
     {
-        name: "Ricardo Mello Marinho",
+        name: "Ricardo Marinho",
         subtitle:"CRM-MG 14.265 - RQE/RA 43.133",
         image: "./assets/Img/Fotos CV/RICARDO.jpg",
         description:`Médico Ginecologista, formado em 1981 pela UFMG – CRMMG: 14265<br>
@@ -126,7 +126,7 @@ Título de Especialista em Ginecologia e Obstetrícia pela FEBRASGO/AMB<br>
 Pós-graduação em Fertilização Assistida Microcirurgia Tubária e Infertilidade pelo Hammersmith Hospital, Universidade de Londres, Serviço do Prof. Robert Winston.`
     },
     {
-        name: "Aline Rodrigues Lorenzon",
+        name: "Aline Lorenzon",
         subtitle:"",
         image: "./assets/Img/Fotos CV/ALINE.jpg",
         description:`Graduação em Ciências Biológicas pelo Instituto de Biociências da Universidade de São Paulo (USP);<br>
